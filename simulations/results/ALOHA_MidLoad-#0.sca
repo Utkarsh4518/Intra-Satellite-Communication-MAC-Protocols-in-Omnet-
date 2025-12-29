@@ -1,0 +1,79 @@
+version 3
+run ALOHA_MidLoad-0-20251226-16:23:37-12508
+attr configname ALOHA_MidLoad
+attr datetime 20251226-16:23:37
+attr datetimef 20251226-162337
+attr experiment ALOHA_MidLoad
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network LifiNetworkAloha
+attr processid 12508
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../inet4.5/images
+config network LifiNetworkAloha
+config **.meanInterArrival 0.1s
+config **.packetLength 128
+config **.mac.meanRetransmit 0.05s
+config sim-time-limit 10s
+
+par LifiNetworkAloha.nodeA.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkAloha.nodeA.app meanInterArrival 0.1s
+attr unit s
+par LifiNetworkAloha.nodeA.app packetLength 128
+scalar LifiNetworkAloha.nodeA.app numGenerated 97
+par LifiNetworkAloha.nodeA.mac typename "\"satellite_lifi_mac.AlohaMac\""
+par LifiNetworkAloha.nodeA.mac meanRetransmit 0.05s
+attr unit s
+scalar LifiNetworkAloha.nodeA.mac numFromUpper 409
+scalar LifiNetworkAloha.nodeA.mac numSent 272
+scalar LifiNetworkAloha.nodeA.mac numCollisions 89
+scalar LifiNetworkAloha.nodeA.mac numDropped 0
+par LifiNetworkAloha.nodeA typename "\"satellite_lifi_mac.simulations.LifiNodeAloha\""
+par LifiNetworkAloha.nodeB.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkAloha.nodeB.app meanInterArrival 0.1s
+attr unit s
+par LifiNetworkAloha.nodeB.app packetLength 128
+scalar LifiNetworkAloha.nodeB.app numGenerated 89
+par LifiNetworkAloha.nodeB.mac typename "\"satellite_lifi_mac.AlohaMac\""
+par LifiNetworkAloha.nodeB.mac meanRetransmit 0.05s
+attr unit s
+scalar LifiNetworkAloha.nodeB.mac numFromUpper 361
+scalar LifiNetworkAloha.nodeB.mac numSent 284
+scalar LifiNetworkAloha.nodeB.mac numCollisions 75
+scalar LifiNetworkAloha.nodeB.mac numDropped 0
+par LifiNetworkAloha.nodeB typename "\"satellite_lifi_mac.simulations.LifiNodeAloha\""
+par LifiNetworkAloha.nodeC.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkAloha.nodeC.app meanInterArrival 0.1s
+attr unit s
+par LifiNetworkAloha.nodeC.app packetLength 128
+scalar LifiNetworkAloha.nodeC.app numGenerated 95
+par LifiNetworkAloha.nodeC.mac typename "\"satellite_lifi_mac.AlohaMac\""
+par LifiNetworkAloha.nodeC.mac meanRetransmit 0.05s
+attr unit s
+scalar LifiNetworkAloha.nodeC.mac numFromUpper 379
+scalar LifiNetworkAloha.nodeC.mac numSent 314
+scalar LifiNetworkAloha.nodeC.mac numCollisions 93
+scalar LifiNetworkAloha.nodeC.mac numDropped 0
+par LifiNetworkAloha.nodeC typename "\"satellite_lifi_mac.simulations.LifiNodeAloha\""
+par LifiNetworkAloha.nodeD.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkAloha.nodeD.app meanInterArrival 0.1s
+attr unit s
+par LifiNetworkAloha.nodeD.app packetLength 128
+scalar LifiNetworkAloha.nodeD.app numGenerated 107
+par LifiNetworkAloha.nodeD.mac typename "\"satellite_lifi_mac.AlohaMac\""
+par LifiNetworkAloha.nodeD.mac meanRetransmit 0.05s
+attr unit s
+scalar LifiNetworkAloha.nodeD.mac numFromUpper 421
+scalar LifiNetworkAloha.nodeD.mac numSent 312
+scalar LifiNetworkAloha.nodeD.mac numCollisions 84
+scalar LifiNetworkAloha.nodeD.mac numDropped 0
+par LifiNetworkAloha.nodeD typename "\"satellite_lifi_mac.simulations.LifiNodeAloha\""
+par LifiNetworkAloha typename "\"satellite_lifi_mac.simulations.LifiNetworkAloha\""
+

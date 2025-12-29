@@ -1,0 +1,110 @@
+version 3
+run TDMA_6nodes_HighLoad-0-20251226-16:59:33-40664
+attr configname TDMA_6nodes_HighLoad
+attr datetime 20251226-16:59:33
+attr datetimef 20251226-165933
+attr experiment TDMA_6nodes_HighLoad
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network LifiNetwork6
+attr processid 40664
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../inet4.5/images
+config network LifiNetwork6
+config **.meanInterArrival 0.05s
+config **.packetLength 128
+config sim-time-limit 10s
+
+par LifiNetwork6.nodeA.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetwork6.nodeA.app meanInterArrival 0.05s
+attr unit s
+par LifiNetwork6.nodeA.app packetLength 128
+scalar LifiNetwork6.nodeA.app numGenerated 188
+par LifiNetwork6.nodeA.mac typename "\"satellite_lifi_mac.TDMAMac\""
+par LifiNetwork6.nodeA.mac slotLength 0.01s
+attr unit s
+par LifiNetwork6.nodeA.mac nodeSlotIndex 0
+par LifiNetwork6.nodeA.mac frameLength 4
+scalar LifiNetwork6.nodeA.mac numFromUpper 188
+scalar LifiNetwork6.nodeA.mac numSent 185
+par LifiNetwork6.nodeA typename "\"satellite_lifi_mac.simulations.LifiNode\""
+par LifiNetwork6.nodeA slotIndex 0
+par LifiNetwork6.nodeB.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetwork6.nodeB.app meanInterArrival 0.05s
+attr unit s
+par LifiNetwork6.nodeB.app packetLength 128
+scalar LifiNetwork6.nodeB.app numGenerated 179
+par LifiNetwork6.nodeB.mac typename "\"satellite_lifi_mac.TDMAMac\""
+par LifiNetwork6.nodeB.mac slotLength 0.01s
+attr unit s
+par LifiNetwork6.nodeB.mac nodeSlotIndex 1
+par LifiNetwork6.nodeB.mac frameLength 4
+scalar LifiNetwork6.nodeB.mac numFromUpper 364
+scalar LifiNetwork6.nodeB.mac numSent 249
+par LifiNetwork6.nodeB typename "\"satellite_lifi_mac.simulations.LifiNode\""
+par LifiNetwork6.nodeB slotIndex 1
+par LifiNetwork6.nodeC.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetwork6.nodeC.app meanInterArrival 0.05s
+attr unit s
+par LifiNetwork6.nodeC.app packetLength 128
+scalar LifiNetwork6.nodeC.app numGenerated 204
+par LifiNetwork6.nodeC.mac typename "\"satellite_lifi_mac.TDMAMac\""
+par LifiNetwork6.nodeC.mac slotLength 0.01s
+attr unit s
+par LifiNetwork6.nodeC.mac nodeSlotIndex 2
+par LifiNetwork6.nodeC.mac frameLength 4
+scalar LifiNetwork6.nodeC.mac numFromUpper 453
+scalar LifiNetwork6.nodeC.mac numSent 249
+par LifiNetwork6.nodeC typename "\"satellite_lifi_mac.simulations.LifiNode\""
+par LifiNetwork6.nodeC slotIndex 2
+par LifiNetwork6.nodeD.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetwork6.nodeD.app meanInterArrival 0.05s
+attr unit s
+par LifiNetwork6.nodeD.app packetLength 128
+scalar LifiNetwork6.nodeD.app numGenerated 213
+par LifiNetwork6.nodeD.mac typename "\"satellite_lifi_mac.TDMAMac\""
+par LifiNetwork6.nodeD.mac slotLength 0.01s
+attr unit s
+par LifiNetwork6.nodeD.mac nodeSlotIndex 3
+par LifiNetwork6.nodeD.mac frameLength 4
+scalar LifiNetwork6.nodeD.mac numFromUpper 462
+scalar LifiNetwork6.nodeD.mac numSent 249
+par LifiNetwork6.nodeD typename "\"satellite_lifi_mac.simulations.LifiNode\""
+par LifiNetwork6.nodeD slotIndex 3
+par LifiNetwork6.nodeE.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetwork6.nodeE.app meanInterArrival 0.05s
+attr unit s
+par LifiNetwork6.nodeE.app packetLength 128
+scalar LifiNetwork6.nodeE.app numGenerated 199
+par LifiNetwork6.nodeE.mac typename "\"satellite_lifi_mac.TDMAMac\""
+par LifiNetwork6.nodeE.mac slotLength 0.01s
+attr unit s
+par LifiNetwork6.nodeE.mac nodeSlotIndex 4
+par LifiNetwork6.nodeE.mac frameLength 4
+scalar LifiNetwork6.nodeE.mac numFromUpper 448
+scalar LifiNetwork6.nodeE.mac numSent 0
+par LifiNetwork6.nodeE typename "\"satellite_lifi_mac.simulations.LifiNode\""
+par LifiNetwork6.nodeE slotIndex 4
+par LifiNetwork6.nodeF.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetwork6.nodeF.app meanInterArrival 0.05s
+attr unit s
+par LifiNetwork6.nodeF.app packetLength 128
+scalar LifiNetwork6.nodeF.app numGenerated 207
+par LifiNetwork6.nodeF.mac typename "\"satellite_lifi_mac.TDMAMac\""
+par LifiNetwork6.nodeF.mac slotLength 0.01s
+attr unit s
+par LifiNetwork6.nodeF.mac nodeSlotIndex 5
+par LifiNetwork6.nodeF.mac frameLength 4
+scalar LifiNetwork6.nodeF.mac numFromUpper 207
+scalar LifiNetwork6.nodeF.mac numSent 0
+par LifiNetwork6.nodeF typename "\"satellite_lifi_mac.simulations.LifiNode\""
+par LifiNetwork6.nodeF slotIndex 5
+par LifiNetwork6 typename "\"satellite_lifi_mac.simulations.LifiNetwork6\""
+

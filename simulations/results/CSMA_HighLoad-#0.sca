@@ -1,0 +1,72 @@
+version 3
+run CSMA_HighLoad-0-20251226-16:23:00-32316
+attr configname CSMA_HighLoad
+attr datetime 20251226-16:23:00
+attr datetimef 20251226-162300
+attr experiment CSMA_HighLoad
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network LifiNetworkCSMA
+attr processid 32316
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../inet4.5/images
+config extends CSMA
+config network LifiNetworkCSMA
+config **.meanInterArrival 0.05s
+config **.packetLength 128
+config **.mac.meanBackoff 0.005s
+config sim-time-limit 10s
+
+par LifiNetworkCSMA.nodeA.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkCSMA.nodeA.app meanInterArrival 0.05s
+attr unit s
+par LifiNetworkCSMA.nodeA.app packetLength 128
+scalar LifiNetworkCSMA.nodeA.app numGenerated 173
+par LifiNetworkCSMA.nodeA.mac typename "\"satellite_lifi_mac.CSMAMac\""
+par LifiNetworkCSMA.nodeA.mac meanBackoff 0.005s
+attr unit s
+scalar LifiNetworkCSMA.nodeA.mac numFromUpper 173
+scalar LifiNetworkCSMA.nodeA.mac numSent 173
+par LifiNetworkCSMA.nodeA typename "\"satellite_lifi_mac.simulations.LifiNodeCSMA\""
+par LifiNetworkCSMA.nodeB.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkCSMA.nodeB.app meanInterArrival 0.05s
+attr unit s
+par LifiNetworkCSMA.nodeB.app packetLength 128
+scalar LifiNetworkCSMA.nodeB.app numGenerated 206
+par LifiNetworkCSMA.nodeB.mac typename "\"satellite_lifi_mac.CSMAMac\""
+par LifiNetworkCSMA.nodeB.mac meanBackoff 0.005s
+attr unit s
+scalar LifiNetworkCSMA.nodeB.mac numFromUpper 206
+scalar LifiNetworkCSMA.nodeB.mac numSent 206
+par LifiNetworkCSMA.nodeB typename "\"satellite_lifi_mac.simulations.LifiNodeCSMA\""
+par LifiNetworkCSMA.nodeC.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkCSMA.nodeC.app meanInterArrival 0.05s
+attr unit s
+par LifiNetworkCSMA.nodeC.app packetLength 128
+scalar LifiNetworkCSMA.nodeC.app numGenerated 217
+par LifiNetworkCSMA.nodeC.mac typename "\"satellite_lifi_mac.CSMAMac\""
+par LifiNetworkCSMA.nodeC.mac meanBackoff 0.005s
+attr unit s
+scalar LifiNetworkCSMA.nodeC.mac numFromUpper 217
+scalar LifiNetworkCSMA.nodeC.mac numSent 217
+par LifiNetworkCSMA.nodeC typename "\"satellite_lifi_mac.simulations.LifiNodeCSMA\""
+par LifiNetworkCSMA.nodeD.app typename "\"satellite_lifi_mac.LifiApp\""
+par LifiNetworkCSMA.nodeD.app meanInterArrival 0.05s
+attr unit s
+par LifiNetworkCSMA.nodeD.app packetLength 128
+scalar LifiNetworkCSMA.nodeD.app numGenerated 202
+par LifiNetworkCSMA.nodeD.mac typename "\"satellite_lifi_mac.CSMAMac\""
+par LifiNetworkCSMA.nodeD.mac meanBackoff 0.005s
+attr unit s
+scalar LifiNetworkCSMA.nodeD.mac numFromUpper 202
+scalar LifiNetworkCSMA.nodeD.mac numSent 202
+par LifiNetworkCSMA.nodeD typename "\"satellite_lifi_mac.simulations.LifiNodeCSMA\""
+par LifiNetworkCSMA typename "\"satellite_lifi_mac.simulations.LifiNetworkCSMA\""
+
